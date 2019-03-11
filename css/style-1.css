@@ -1,5 +1,29 @@
 
-.title {
-    color:blue }
-.h1 {
-    color:red}
+h1 {
+    color:red;   
+}
+
+.navbar-cont{
+    display:block;
+    color:red;
+    text-align:center; 
+    width:20px;
+    border:20px solid grey;
+    font-size:30px;
+    padding:20px;
+    height:35px;
+    float:right;
+}
+.symbol {
+    border:20px solid blue;
+    background-color: white;
+    padding:20px;
+}
+    h2 {
+    text-align:left;
+    font-size:20px;
+}
+aside {
+    float:right;
+
+}
