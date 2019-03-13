@@ -2,7 +2,10 @@
 h1 {
     color:red;   
 }
+* {
+    box-sizing:border-box;
 
+}
 .navbar-cont{
     display:block;
     color:red;
@@ -11,19 +14,41 @@ h1 {
     border:20px solid grey;
     font-size:30px;
     padding:20px;
-    height:35px;
-    float:right;
+    margin:auto;
+}
+.navbar-cont a {
+    border:2px solid grey;
 }
 .symbol {
     border:20px solid blue;
     background-color: white;
     padding:20px;
+
 }
     h2 {
     text-align:left;
     font-size:20px;
+    color:blue;
 }
-aside {
-    float:right;
+.left-column {
+    float: left;
+    width: 50%;
+      }
+.right-column {
+    float: left;
+    width: 50%;
+      }
 
-}
+.row {
+    display:block;
+    }
+ footer {
+     display:block;
+     color:blue;
+
+    }
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+    }

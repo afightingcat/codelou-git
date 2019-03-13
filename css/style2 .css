@@ -2,7 +2,7 @@
 h1 {
     color:red;   
 }
- .navbar-cont{
+.navbar-cont{
        display:block;
        background:grey;
        border:15px blue; 
@@ -11,15 +11,9 @@ h1 {
        float:left;
        min-height: 25px;
 }
-
-.navbar ul{
-    list-style: none;
-  }
-
 .navbar ul li {
 display:inline-block;
 }
-  
 .symbol {
     border-style: solid blue 35px;
     width:200px;
