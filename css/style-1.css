@@ -1,16 +1,15 @@
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  } 
+
 
 h1 {
     color:red;   
 }
 * {
     box-sizing:border-box;
+}
+
+img {
+    width: 600px;
+    max-width: 100%;
 }
     
 .navbar-cont{
@@ -25,9 +24,29 @@ h1 {
 }
 .navbar-cont a {
     border:2px solid grey;
+    text-decoration: none;
+    display: block;
+    padding: 6px 10px;
+    margin-bottom: 10px;
 }
+
+.navbar-cont a:hover {
+background: lightblue;
+color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+    margin-right: 10px;
+}
+
 .symbol {
-    border:20px solid blue;
     background-color: white;
     padding:20px;
 
@@ -39,12 +58,17 @@ h1 {
 }
 .left-column {
     float: left;
-    width: 50%;
+    width: 100%;
+    border: 10px solid blue;
+    padding: 10px;
+    margin: 0;
       }
 .right-column {
     float: left;
-    width: 50%;
-    border: 20px solid blue;
+    width: 100%;
+    border: 10px solid blue;
+    padding: 10px;
+    margin: 0;
     display:block;
       }
 
@@ -61,3 +85,30 @@ h1 {
     display: table;
     clear: both;
     }
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 600px) {
+    .column, input[type=submit] {
+      width: 50%;
+      margin-top: 0;
+    }
+
+    .left-column {
+        float: left;
+        width: 50%;
+        border: 20px solid blue;
+        padding: 20px;
+          }
+    .right-column {
+        float: left;
+        width: 50%;
+        padding: 20px;
+        border: 20px solid blue;
+
+  } 
+  #Desktop
+only screen and (min-width: 992px) { 
+display:block;
+float:left;
+}
