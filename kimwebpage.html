@@ -7,7 +7,6 @@
 <link rel="stylesheet" type="text/css" href="css/style-1.css"/>
 <meta name="viewport" content="width device-width initial scale"/>
 
-
 </head>
 
 <body>
@@ -83,7 +82,7 @@ Prior to the establishment of the "Department of the Army Emblem", there was no 
    <div class="right-column">
 
       <div class="form">
-            <form action="/action_page.php">
+         <form name="myForm" onsubmit="return validateForm()"method="post">
                <label for="fname">First Name</label>
                <input type="text" id="fname" name="firstname" placeholder="Your name..">
                <label for="lname">Last Name</label>
